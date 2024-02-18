@@ -1,0 +1,144 @@
+.watch-video{
+    margin: 0px;
+    flex-basis: 70%;
+ }
+ .video-flex{
+    display: flex;
+    justify-content: space-between;
+ }
+ .live-viewers{
+    flex-basis: 30%;
+    margin: 40px 30px;
+ }
+ .live-viewers .profile-flex{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: max-content;
+    margin-top: 10px;
+ }
+ .live-viewers h2{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: var(--black);
+    margin-bottom: 10px;
+ }
+ .live-viewers .profile-flex img{
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    
+ }
+ .live-viewers .profile-flex h3{
+    margin: 10px;
+    font-size: 25px;
+   
+    color: var(--black);
+ }
+ 
+.video-list-container{
+ flex:1 1 350px;
+ height: 485px;
+ overflow-y: scroll;
+ border-radius: 5px;
+ box-shadow: 0 5px 15px rgba(0,0,0,.1);
+ background-color: var(--white);
+ padding:15px;
+ margin-top: 20px;
+}
+
+.video-list-container::-webkit-scrollbar{
+ width: 10px;
+}
+
+.video-list-container::-webkit-scrollbar-track{
+ background-color: var(--white);
+ border-radius: 5px;
+}
+
+.video-list-container::-webkit-scrollbar-thumb{
+ background-color: var(--white);
+ border-radius: 5px;
+}
+
+.video-list-container .list{
+ display: flex;
+ align-items: center;
+ gap:15px;
+ padding:10px;
+ background-color: var(--white);
+ cursor: pointer;
+ border-radius: 5px;
+ margin-bottom: 10px;
+}
+
+.video-list-container .list:last-child{
+ margin-bottom: 0;
+}
+
+.video-list-container .list.active{
+ background-color: #444;
+}
+.video-list-container .list:hover{
+ background-color: #9999999e;
+}
+
+.video-list-container .list.active .list-title{
+ color: var(--white);
+}
+
+.video-list-container .list .list-video{
+ width: 100px;
+ border-radius: 5px;
+}
+.video-list-container .list .list-title{
+ font-size: 17px;
+ color: var(--black);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 450){
+
+  .video-list-container .list{
+    flex-flow: column;
+    gap:10px;
+ }
+
+  .video-list-container .list .list-video{
+    width: 100%;
+ }
+
+  .video-list-container .list .list-title{
+    font-size: 15px;
+    text-align: center;
+ }
+
+}
+
+ @media screen and (max-width: 981px){
+    .video-flex{
+       flex-wrap: wrap;
+    }
+    .watch-video{
+       flex-basis: 100%;
+    }
+    .live-viewers{
+       flex-basis: 100%;
+    }
+    .live-viewers .profile-flex h2{
+       font-size: 25px;
+    }
+    
+ }
